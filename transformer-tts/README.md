@@ -51,6 +51,7 @@ pnpm run build
 - 使用 `@vercel/static-build` 构建器
 - 指定 `package.json` 作为构建源
 - 设置输出目录为 `dist`
+- 确保所有依赖项（包括 `@xenova/transformers`）都在 `package.json` 中正确列出
 
 ### 常见问题解决
 
