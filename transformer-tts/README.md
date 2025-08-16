@@ -31,7 +31,7 @@ npm run dev
 
 1. 将代码推送到GitHub仓库
 2. 在Vercel中导入项目
-3. Vercel会自动检测到这是一个Vite项目并正确配置构建设置
+3. Vercel会使用项目中的 `vercel.json` 配置文件进行构建
 4. 点击部署即可
 
 或者使用Vercel CLI:
@@ -43,6 +43,14 @@ npm install -g vercel
 # 部署
 vercel
 ```
+
+### Vercel配置说明
+
+项目包含 `vercel.json` 配置文件，用于指定构建设置：
+
+- 使用 `@vercel/static-build` 构建器
+- 指定 `package.json` 作为构建源
+- 设置输出目录为 `dist`
 
 ## 注意事项
 
