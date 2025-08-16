@@ -52,6 +52,14 @@ vercel
 - 指定 `package.json` 作为构建源
 - 设置输出目录为 `dist`
 
+### 常见问题解决
+
+如果遇到 `App is not defined` 错误，请确保 `src/main.jsx` 文件中正确导入了App组件：
+
+```jsx
+import App from './App'
+```
+
 ## 注意事项
 
 - 首次加载时需要从Hugging Face下载模型文件，可能需要一些时间
