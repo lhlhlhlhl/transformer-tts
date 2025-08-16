@@ -27,22 +27,22 @@ npm install
 npm run dev
 ```
 
-## 部署到Vercel
+## 部署到 Vercel
 
-1. 将代码推送到GitHub仓库
-2. 在Vercel中导入项目
-3. Vercel会使用项目中的 `vercel.json` 配置文件进行构建
-4. 点击部署即可
+1. 将代码推送到 GitHub 仓库
+2. 在 [Vercel](https://vercel.com/) 上导入您的项目
+3. Vercel 会使用项目中的 `vercel.json` 配置文件进行构建
+4. 等待部署完成，您将获得一个可访问的 URL
 
-或者使用Vercel CLI:
+### 本地构建
+
+如果您想在本地查看构建结果，可以运行以下命令：
 
 ```bash
-# 安装Vercel CLI
-npm install -g vercel
-
-# 部署
-vercel
+pnpm run build
 ```
+
+构建后的文件将位于 `dist` 目录中，您可以将其部署到任何静态文件服务器上。
 
 ### Vercel配置说明
 
